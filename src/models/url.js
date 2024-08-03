@@ -6,12 +6,12 @@ const urlSchema=new mongoose.Schema({
         required:true,
         unique:true
     } 
-    ,reDirectURl:{
+    ,redirectURL:{
         type:String,
         required:true,
     } 
     , visitHistory:[{timestamp:{type:Number}}],
-},{timestamps:true});
+},{timestamp:true});
 
 const URL=mongoose.model('URL',urlSchema);
 module.exports = URL;

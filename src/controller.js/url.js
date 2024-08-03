@@ -11,7 +11,7 @@ async function handleGenerateURL(req,res){
 
     await URL.create({
         shortId:shortID,
-        reDirectURl:body.url,
+        redirectURL:body.url,
         visitHistory:[]
     });
    return  res.json({id:shortID});
